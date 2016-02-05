@@ -1,0 +1,73 @@
+#!/usr/bin/env python
+# -*-Python-*-
+
+# This is a simple script that takes a sequence of command-line arguments
+# that are names of test input files, and for each value
+# F.tst in this sequence, runs (in effect)
+#   source F.tst
+# and compares the output and standard output against F.std and F.err,
+# respectively.  That is, it expects to find a command to run a Java application
+# in F.tst (e.g.,
+#       java make.Main -f make-tests/F.mk -D make-tests/F.info foo bar
+# ).  It runs this command, putting the output and error messages in OUTPUT
+# and ERR, respectively, and compares them with standard results in F.std
+# and F.err, counting up and reporting the number of failures and successes.
+# It assumes the test is SUPPOSED to produce errors if F.err exists and is not
+# empty. Feel free to adapt it to your needs.
+
+# Since the command in F.tst is arbitrary, you are free to put things like
+#   java trip.Main -o myoutput ... ; cat myoutput
+# so that you can test output to a file.
+
+# NOTE: This is not the autograder test, which is a bit more liberal and takes
+# into account the fact that the output is not precisely specified.
+
+import sys, os, re
+from subprocess import Popen, PIPE
+       		      
+def Contents(f):
+    try:
+        inp = open(f)
+        result = inp.read()
+        inp.close()
+        return result
+    except IOError:
+        return ''
+
+count = fail = 0
+for test in sys.argv[1:]:
+    base = os.path.splitext(test)[0]
+    name = os.path.basename(base)
+    stdout = Contents(base + ".std")
+    stderr = Contents(base + ".err")
+    
+    proc = Popen(Contents(test).strip(), shell=True,
+                 stdout=PIPE, stdin=PIPE, stderr=PIPE)
+    out, err = proc.communicate('')
+    code = proc.returncode
+
+    count += 1
+    if stderr:
+        if code == 0 or not err:
+            print "%s: FAILED (should have indicated error)" % name
+            fail += 1
+        elif err != stderr:
+            print "%s: FAILED (wrong error message)" % name
+            fail += 1
+        else:
+            print "%s: OK" % name
+    else:
+        if code != 0 or err:
+            print "%s: FAILED (unexpected error exit or message)" % name
+            fail += 1
+        elif out != stdout:
+            print "%s: FAILED (wrong output)" % name
+            fail += 1
+        else:
+            print "%s: OK" % name
+
+if fail == 0:
+    print "Passed all %d tests." % (count,)
+else:
+    print "Failed %d out of %d tests." % (fail, count)
+

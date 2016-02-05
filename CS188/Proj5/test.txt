@@ -1,0 +1,76 @@
+===================================
+Mistake on example 12
+Predicted 9; truth is 7
+Image: 
+===================================
+Mistake on example 14
+Predicted 5; truth is 6
+Image: 
+===================================
+Mistake on example 28
+Predicted 5; truth is 3
+Image: 
+===================================
+Mistake on example 32
+Predicted 4; truth is 5
+Image: 
+===================================
+Mistake on example 39
+Predicted 9; truth is 7
+Image: 
+===================================
+Mistake on example 44
+Predicted 8; truth is 6
+Image: 
+===================================
+Mistake on example 62
+Predicted 7; truth is 3
+Image: 
+===================================
+Mistake on example 68
+Predicted 9; truth is 8
+Image: 
+===================================
+Mistake on example 73
+Predicted 8; truth is 5
+Image: 
+===================================
+Mistake on example 14
+Predicted 5; truth is 6
+Image: 
+===================================
+Mistake on example 28
+Predicted 5; truth is 3
+Image: 
+===================================
+Mistake on example 32
+Predicted 4; truth is 5
+Image: 
+===================================
+Mistake on example 33
+Predicted 3; truth is 8
+Image: 
+===================================
+Mistake on example 39
+Predicted 9; truth is 7
+Image: 
+===================================
+Mistake on example 44
+Predicted 8; truth is 6
+Image: 
+===================================
+Mistake on example 62
+Predicted 7; truth is 3
+Image: 
+===================================
+Mistake on example 68
+Predicted 9; truth is 8
+Image: 
+===================================
+Mistake on example 69
+Predicted 8; truth is 3
+Image: 
+===================================
+Mistake on example 73
+Predicted 8; truth is 5
+Image: 

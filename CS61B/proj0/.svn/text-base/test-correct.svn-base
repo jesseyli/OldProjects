@@ -1,0 +1,25 @@
+#!/bin/bash
+# Usage: bash test-correct F1.inp F2.inp ...
+#     Runs each F.inp through java enigma.Main and compares the output to 
+#     F.out.  Briefly reports results.  Exits normally if all tests pass, and
+#     otherwise exits with code 1.
+
+rm -rf OUT
+code=0
+
+for f in $*; do
+    echo -n "$f: ";
+    if java -ea enigma.Main < $f > OUT 2>&1; then
+	if diff -b OUT $(dirname $f)/$(basename $f .inp).out >/dev/null; then
+	    echo "OK";
+	else
+	    code=1; echo "ERROR (output)";
+	fi;
+    else
+	code=1; echo "ERROR (bad exit)";
+    fi;
+    rm -rf OUT;
+done;
+
+exit $code
+        

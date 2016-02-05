@@ -1,0 +1,16 @@
+# Test of set command.  Program should not crash, and boards should be
+# correct.
+java -ea jump61.Main
+None
+===#1===
+set 1 1 1 r
+set 1 2 2 r
+set 3 3 4 b
+set 6 6 2 b
+manual blue
+start
+1 1
+set 1 6 1 r
+dump
+quit
+===#2===

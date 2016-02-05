@@ -1,0 +1,11 @@
+Set 1
+	yacc -o foo.c foo.y
+        gcc -g -c foo.o foo.c
+	gcc -o foo foo.o
+Set 2
+Set 3
+	yacc -o foo.c foo.y
+Set 4
+	yacc -o foo.c foo.y
+        gcc -g -c foo.o foo.c
+	gcc -o foo foo.o

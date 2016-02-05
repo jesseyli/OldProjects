@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Usage: test-correct INPUTFILE.tx ...
+#     Run each INPUTFILE through the program, checking the result against
+#     the standard output INPUTFILE.std.  Reports number of failures.
+#     Exits with 0 iff there are no errors.
+
+prog="java -ea tex61.Main"
+out="/tmp/tex61$$.out"
+errout="/tmp/tex61$$.err"
+normalize=$(dirname $0)/normalize
+
+trap 'rm -rf $out $errout' 0 SIGHUP SIGINT SIGTERM
+
+tests=0
+errs=0
+for f in "$@"; do
+    name="$(basename $f)"
+
+    if [ ! -e $f ]; then
+        continue
+    fi
+
+    echo -n $name...
+    tests=$(($tests + 1))
+
+    rm -rf $out $errout
+    std="$(dirname $f)/${name}.std"
+
+    if $prog $f $out 2>$errout; then 
+        echo "FAILED (exit code did not report errors)"
+        errs=$(($errs + 1))
+    elif grep -qi 'Exception in thread' $errout; then
+        echo "FAILED (unhandled exception)"
+        errs=$(($errs + 1))
+    elif grep -qi 'error' $errout; then
+        echo OK
+    else
+        echo "FAILED (no proper error message in error output)"
+        errs=$(($errs + 1))
+    fi
+        
+done
+
+echo -n "Out of $tests tests:"
+if [ $errs -eq 0 ]; then
+   echo " all passed"
+   exit 0
+else 
+   echo " $errs failures"
+   exit 1
+fi

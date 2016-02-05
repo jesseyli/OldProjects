@@ -1,0 +1,91 @@
+This directory contains a skeleton for CS61B Project 1.
+
+Although some of what's in here might seem mysterious to you, try to 
+understand what it's all for.  Don't be afraid to ask us about it.
+
+The skeleton files provided in the tex61 subdirectory constitute a
+SUGGESTED design.  You are free to discard, modify, or add ANYTHING,
+ANYWHERE.  However, don't do so without first understanding the design
+of this skeleton (which, after all, worked for us).  The only requirements
+are that
+
+    java tex61.Main INPUT_FILE [ OUTPUT_FILE ]
+
+works as specified, and that 
+
+    java tex61.UnitTest 
+
+works properly to run unit tests.
+
+Run the command 'make style' frequently to help keep your program
+clean.  There are a number of comments scattered throughout the
+skeleton of the form "// FIXME", which the style program will flag.
+This is a good way to remind yourself of what you still need to do.
+It will also remind you to add your name as the @author tag to classes
+you implement.  Do NOT submit this project without getting it to pass
+'make style'! The submission software will reject it, and we will
+>>NOT<< accept assignments that are emailed to us because you couldn't
+get the submission software to work!
+
+CONTENTS:
+
+README                 This file.
+        
+Makefile               Configuration file for gmake.  See the comment at the
+                       beginning of this file to see what it does for you.
+
+tex61/
+
+    Makefile           A simple makefile that delegates all requests to
+                       the outer directory's makefile.
+                        
+    Main.java          Entry point to program. You may modify this if you
+                       want, but it will work as it stands.
+    UnitTest.java      Main unit-test file, which calls any others.
+
+    The following files in tex61 are all optional.  Use them if you see fit,
+    and remove any you don't use.
+
+     Controller.java   Top-level logic for formatting.
+     Defaults.java     Collected default formatting parameters.
+     FormatException.java
+		       Defines an unchecked exception that can be used to
+		       signal (expected) errors in program inputs.  This
+		       class also contains some error-reporting routines.
+     InputParser.java  Class that reads input files, breaks them into
+     		       significant pieces, and passes these to a Controller.
+     LineAssembler.java
+		       Used by a Controller to accumulate, justify, fill, and
+		       output lines of text.
+     PageAssembler.java
+		       Abstract class that receives formatted lines of text
+                       (from a Controller), and breaks them into pages as
+                       determined by its parameters.
+     PageCollector.java 
+		       A kind of PageAssembler thst simply collects lines into
+		       a list for later output.
+     PagePrinter.java  A kind of PageAssembler that prints lines it receives.
+
+
+     PageAssemblerTest.java
+                       Start of some unit tests for PageAssemblers.
+
+test-correct           Blackbox tester for correct inputs.
+test-error             Blackbox tester for erroneous inputs.
+normalize              A script that removes inessential pieces of output
+                       files (such as blanks at the ends of lines).
+
+staff-version          If we update the skeleton, this file will contain a
+                       unique version id indicating what version of the
+                       skeleton is currently in use.
+
+tests/
+     correct/          Directory for test inputs that are supposed to work.
+
+         sample.tx     The example from the project specification.
+         sample.std    The expected output from sample.tx.
+
+     error/            Directory for test inputs that are supposed to cause
+                       error messages.
+
+

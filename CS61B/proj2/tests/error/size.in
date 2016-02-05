@@ -1,0 +1,14 @@
+# Test of size command.  Program should not crash, and boards should be
+# correct.
+java -ea jump61.Main
+None
+===#1===
+size 2
+dump
+size 3
+dump
+set 1 1 1 r
+size 4
+dump
+quit
+===#2===

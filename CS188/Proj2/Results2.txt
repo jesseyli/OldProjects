@@ -1,0 +1,565 @@
+[LogicAgent] using problem type FoodGhostsPlanningProblem
+1
+329
+2
+540
+3
+751
+4
+962
+5
+1173
+6
+1384
+7
+1595
+8
+1806
+9
+2017
+10
+2228
+11
+2439
+12
+2650
+13
+2861
+14
+3072
+15
+3283
+16
+3494
+17
+3705
+18
+3916
+19
+4127
+20
+4338
+21
+4549
+22
+4760
+23
+4971
+24
+5182
+25
+5393
+26
+5604
+27
+5815
+28
+6026
+29
+6237
+30
+6448
+31
+6659
+32
+6870
+33
+7081
+34
+         4617086846 function calls (4337624388 primitive calls) in 2294.582 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000 2294.408 2294.408 pacman.py:633(runGames)
+        1    0.000    0.000 2294.408 2294.408 game.py:567(run)
+        1    0.000    0.000 2294.407 2294.407 logicAgents.py:87(registerInitialState)
+        1    0.000    0.000 2294.407 2294.407 logicAgents.py:79(<lambda>)
+        1    1.825    1.825 2294.407 2294.407 logicPlan.py:362(foodGhostLogicPlan)
+       34    0.175    0.005 2196.627   64.607 logic.py:599(pycoSAT)
+       34  101.898    2.997 1118.628   32.901 logic.py:632(mapSymbolAndIndices)
+180326267/15632822  327.948    0.000  853.061    0.000 logic.py:322(prop_symbols)
+218067150/142584494   96.648    0.000  589.735    0.000 logic.py:329(<genexpr>)
+       34  288.893    8.497  563.235   16.566 logic.py:554(is_valid_cnf)
+       33  185.319    5.616  501.299   15.191 logic.py:650(exprClausesToIndexClauses)
+393845256  293.957    0.000  353.343    0.000 logic.py:111(__hash__)
+180473698  100.733    0.000  247.383    0.000 logic.py:224(is_prop_symbol)
+311456131  185.751    0.000  236.660    0.000 logic.py:216(is_symbol)
+ 33482099   53.643    0.000  219.649    0.000 logic.py:525(dissociate)
+ 31268860   22.204    0.000  211.930    0.000 logic.py:545(disjuncts)
+218836401  139.855    0.000  166.930    0.000 logic.py:103(__eq__)
+66792105/33482099  135.834    0.000  166.007    0.000 logic.py:529(collect)
+4181319/248831   10.710    0.000   85.265    0.000 {map}
+753781260   78.802    0.000   78.802    0.000 {isinstance}
+     9996    0.037    0.000   78.207    0.008 logic.py:390(to_cnf)
+1334500/9996    6.938    0.000   72.676    0.007 logic.py:454(distribute_and_over_or)
+  2213171    5.731    0.000   63.460    0.000 logic.py:480(associate)
+787690512   59.386    0.000   59.386    0.000 {hash}
+  3985395    6.938    0.000   56.787    0.000 logic.py:78(__init__)
+     2856    0.124    0.000   52.076    0.018 logicPlan.py:325(ghostDirectionSuccessorStateAxioms)
+130700335   45.002    0.000   45.002    0.000 logic.py:92(__repr__)
+322007379   30.183    0.000   30.183    0.000 {method 'append' of 'list' objects}
+      714    0.029    0.000   25.465    0.036 logicPlan.py:349(pacmanAliveSuccessorStateAxioms)
+  3985400   21.134    0.000   25.336    0.000 logic_utils.py:533(num_or_str)
+311456131   25.330    0.000   25.330    0.000 {method 'isalpha' of 'str' objects}
+339010504/339010351   20.754    0.000   20.754    0.000 {len}
+257800328   19.800    0.000   19.800    0.000 {method 'isupper' of 'str' objects}
+      104    0.000    0.000   15.450    0.149 logic.py:499(conjoin)
+  1336642    1.193    0.000   14.775    0.000 logic.py:131(__or__)
+ 39165768   10.453    0.000   13.511    0.000 logic.py:191(expr)
+       68    0.000    0.000   11.332    0.167 logic.py:536(conjuncts)
+       33    7.678    0.233    7.678    0.233 {pycosat.solve}
+396100/9996    0.356    0.000    4.067    0.000 logic.py:433(move_not_inwards)
+  1330216    2.561    0.000    3.955    0.000 logic_utils.py:332(find_if)
+  3985403    1.390    0.000    3.757    0.000 logic_utils.py:659(isnumber)
+168538/54230    0.167    0.000    2.835    0.000 logic.py:443(<lambda>)
+  3985413    2.366    0.000    2.366    0.000 {hasattr}
+   194959    0.163    0.000    1.975    0.000 logic.py:126(__invert__)
+     2856    0.066    0.000    1.969    0.001 logicPlan.py:307(ghostPositionSuccessorStateAxioms)
+228106/9996    0.232    0.000    1.422    0.000 logic.py:409(eliminate_implications)
+  9448668    1.394    0.000    1.394    0.000 logic.py:468(<lambda>)
+    73711    0.302    0.000    1.245    0.000 logic.py:143(__init__)
+      714    0.015    0.000    0.948    0.001 logicPlan.py:197(pacmanSuccessorStateAxioms)
+  3985404    0.446    0.000    0.446    0.000 {method 'strip' of 'str' objects}
+    29988    0.027    0.000    0.318    0.000 logic.py:123(__and__)
+    10343    0.006    0.000    0.176    0.000 logic.py:512(disjoin)
+        1    0.000    0.000    0.146    0.146 pacman.py:481(readCommand)
+     6528    0.005    0.000    0.141    0.000 logicPlan.py:130(atLeastOne)
+        2    0.000    0.000    0.095    0.047 pacman.py:592(loadAgent)
+    13/12    0.057    0.004    0.094    0.008 {__import__}
+        1    0.000    0.000    0.050    0.050 layout.py:131(getLayout)
+        1    0.000    0.000    0.050    0.050 layout.py:145(tryToLoad)
+        4    0.000    0.000    0.049    0.012 genericpath.py:23(exists)
+        4    0.049    0.012    0.049    0.012 {nt.stat}
+     4284    0.004    0.000    0.046    0.000 logic.py:134(__mod__)
+        1    0.001    0.001    0.028    0.028 game.py:23(<module>)
+        1    0.002    0.002    0.027    0.027 util.py:15(<module>)
+        1    0.002    0.002    0.019    0.019 inspect.py:25(<module>)
+        1    0.003    0.003    0.018    0.018 agents.py:43(<module>)
+        1    0.016    0.016    0.018    0.018 hybridAgents.py:15(<module>)
+        1    0.002    0.002    0.014    0.014 Tkinter.py:31(<module>)
+        1    0.007    0.007    0.012    0.012 FixTk.py:1(<module>)
+        1    0.001    0.001    0.012    0.012 tokenize.py:23(<module>)
+        9    0.000    0.000    0.011    0.001 re.py:230(_compile)
+        8    0.000    0.000    0.011    0.001 re.py:192(compile)
+        9    0.000    0.000    0.011    0.001 sre_compile.py:567(compile)
+       35    0.000    0.000    0.008    0.000 logicPlan.py:168(exactlyOne)
+       35    0.001    0.000    0.006    0.000 logicPlan.py:152(atMostOne)
+        1    0.001    0.001    0.006    0.006 random.py:40(<module>)
+        9    0.000    0.000    0.006    0.001 sre_parse.py:706(parse)
+     62/9    0.000    0.000    0.006    0.001 sre_parse.py:317(_parse_sub)
+    121/9    0.002    0.000    0.006    0.001 sre_parse.py:395(_parse)
+        9    0.000    0.000    0.005    0.001 sre_compile.py:552(_code)
+    269/9    0.002    0.000    0.004    0.000 sre_compile.py:64(_compile)
+        1    0.003    0.003    0.004    0.004 __init__.py:4(<module>)
+    13538    0.004    0.000    0.004    0.000 game.py:180(__getitem__)
+        6    0.002    0.000    0.003    0.001 collections.py:293(namedtuple)
+        1    0.000    0.000    0.003    0.003 random.py:91(__init__)
+        1    0.000    0.000    0.003    0.003 random.py:100(seed)
+        1    0.002    0.002    0.002    0.002 hashlib.py:56(<module>)
+        1    0.002    0.002    0.002    0.002 {nt.urandom}
+        1    0.001    0.001    0.001    0.001 collections.py:1(<module>)
+      117    0.000    0.000    0.001    0.000 sre_compile.py:228(_compile_charset)
+        1    0.001    0.001    0.001    0.001 logic.py:23(<module>)
+      758    0.000    0.000    0.001    0.000 sre_parse.py:212(get)
+        1    0.001    0.001    0.001    0.001 {function seed at 0x0239B3F0}
+        1    0.000    0.000    0.001    0.001 pacmanAgents.py:15(<module>)
+        1    0.001    0.001    0.001    0.001 {open}
+      117    0.001    0.000    0.001    0.000 sre_compile.py:256(_optimize_charset)
+      933    0.001    0.000    0.001    0.000 sre_parse.py:193(__next)
+     1202    0.001    0.000    0.001    0.000 sre_parse.py:141(__getitem__)
+        9    0.000    0.000    0.001    0.000 sre_compile.py:433(_compile_info)
+  385/127    0.001    0.000    0.001    0.000 sre_parse.py:151(getwidth)
+        1    0.001    0.001    0.001    0.001 logic_utils.py:18(<module>)
+        1    0.001    0.001    0.001    0.001 dis.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 pacman.py:41(<module>)
+        1    0.001    0.001    0.001    0.001 pacman.py:55(GameState)
+        1    0.000    0.000    0.001    0.001 FixTk.py:21(convert_path)
+       10    0.001    0.000    0.001    0.000 {nt._isdir}
+      683    0.001    0.000    0.001    0.000 {range}
+      740    0.000    0.000    0.000    0.000 sre_parse.py:206(match)
+       17    0.000    0.000    0.000    0.000 optparse.py:1008(add_option)
+        2    0.000    0.000    0.000    0.000 pacman.py:229(deepCopy)
+        3    0.000    0.000    0.000    0.000 layout.py:27(__init__)
+        4    0.000    0.000    0.000    0.000 {nt.listdir}
+        1    0.000    0.000    0.000    0.000 logicAgents.py:29(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'decode' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:71(search_function)
+        2    0.000    0.000    0.000    0.000 game.py:395(deepCopy)
+       17    0.000    0.000    0.000    0.000 optparse.py:561(__init__)
+      118    0.000    0.000    0.000    0.000 sre_compile.py:428(_simple)
+        1    0.000    0.000    0.000    0.000 pacman.py:274(newGame)
+        2    0.000    0.000    0.000    0.000 layout.py:92(deepCopy)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:783(random_tests)
+       26    0.000    0.000    0.000    0.000 sre_compile.py:411(_mk_bitmap)
+        1    0.000    0.000    0.000    0.000 re.py:173(findall)
+        3    0.000    0.000    0.000    0.000 layout.py:95(processLayoutText)
+        1    0.000    0.000    0.000    0.000 opcode.py:5(<module>)
+      571    0.000    0.000    0.000    0.000 sre_parse.py:137(__len__)
+      320    0.000    0.000    0.000    0.000 sre_parse.py:149(append)
+       54    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+      445    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+      269    0.000    0.000    0.000    0.000 sre_parse.py:92(__init__)
+        1    0.000    0.000    0.000    0.000 optparse.py:1191(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2218(Canvas)
+       34    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 __init__.py:349(__init__)
+       17    0.000    0.000    0.000    0.000 optparse.py:610(_set_attrs)
+       30    0.000    0.000    0.000    0.000 {all}
+       13    0.000    0.000    0.000    0.000 game.py:170(__init__)
+        5    0.000    0.000    0.000    0.000 game.py:375(__init__)
+       15    0.000    0.000    0.000    0.000 {dir}
+        1    0.000    0.000    0.000    0.000 optparse.py:1368(parse_args)
+      624    0.000    0.000    0.000    0.000 {min}
+      147    0.000    0.000    0.000    0.000 layout.py:116(processLayoutChar)
+        1    0.000    0.000    0.000    0.000 __init__.py:432(__getattr__)
+        1    0.000    0.000    0.000    0.000 __init__.py:265(_reset_cache)
+        3    0.000    0.000    0.000    0.000 game.py:222(asList)
+        4    0.000    0.000    0.000    0.000 os.py:421(__setitem__)
+        1    0.000    0.000    0.000    0.000 optparse.py:1258(_populate_option_list)
+      244    0.000    0.000    0.000    0.000 collections.py:337(<genexpr>)
+        1    0.000    0.000    0.000    0.000 optparse.py:1248(_add_help_option)
+       67    0.000    0.000    0.000    0.000 sre_parse.py:268(_escape)
+        4    0.000    0.000    0.000    0.000 {nt.putenv}
+        3    0.000    0.000    0.000    0.000 __init__.py:78(CFUNCTYPE)
+        3    0.000    0.000    0.000    0.000 pacman.py:220(__init__)
+        9    0.000    0.000    0.000    0.000 ntpath.py:63(join)
+        1    0.000    0.000    0.000    0.000 _endian.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 mbcs.py:9(<module>)
+       14    0.000    0.000    0.000    0.000 __init__.py:147(_check_size)
+        1    0.000    0.000    0.000    0.000 optparse.py:1420(_process_args)
+       30    0.000    0.000    0.000    0.000 collections.py:363(<genexpr>)
+        3    0.000    0.000    0.000    0.000 __init__.py:493(PYFUNCTYPE)
+        5    0.000    0.000    0.000    0.000 logic.py:287(__init__)
+        4    0.000    0.000    0.000    0.000 game.py:405(copyAgentStates)
+        1    0.000    0.000    0.000    0.000 token.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 ntpath.py:327(expandvars)
+       17    0.000    0.000    0.000    0.000 optparse.py:589(_set_opt_strings)
+        1    0.000    0.000    0.000    0.000 optparse.py:1319(get_default_values)
+        5    0.000    0.000    0.000    0.000 optparse.py:1517(_process_short_opts)
+        2    0.000    0.000    0.000    0.000 {_ctypes.POINTER}
+      230    0.000    0.000    0.000    0.000 {setattr}
+        4    0.000    0.000    0.000    0.000 game.py:214(shallowCopy)
+       18    0.000    0.000    0.000    0.000 ntpath.py:96(splitdrive)
+        4    0.000    0.000    0.000    0.000 __init__.py:375(__getattr__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:425(Misc)
+        1    0.000    0.000    0.000    0.000 gettext.py:568(gettext)
+      119    0.000    0.000    0.000    0.000 opcode.py:27(def_op)
+        1    0.000    0.000    0.000    0.000 gettext.py:530(dgettext)
+        1    0.000    0.000    0.000    0.000 pacman.py:250(initialize)
+       40    0.000    0.000    0.000    0.000 sre_parse.py:236(_class_escape)
+        3    0.000    0.000    0.000    0.000 game.py:206(copy)
+       41    0.000    0.000    0.000    0.000 sre_parse.py:74(opengroup)
+       41    0.000    0.000    0.000    0.000 sre_parse.py:85(closegroup)
+        1    0.000    0.000    0.000    0.000 __init__.py:297(create_unicode_buffer)
+        1    0.000    0.000    0.000    0.000 game.py:487(initialize)
+        1    0.000    0.000    0.000    0.000 heapq.py:31(<module>)
+        9    0.000    0.000    0.000    0.000 sre_parse.py:189(__init__)
+       20    0.000    0.000    0.000    0.000 game.py:147(copy)
+        9    0.000    0.000    0.000    0.000 {_sre.compile}
+        1    0.000    0.000    0.000    0.000 gettext.py:464(translation)
+        1    0.000    0.000    0.000    0.000 __future__.py:48(<module>)
+      118    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 gettext.py:424(find)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+       17    0.000    0.000    0.000    0.000 optparse.py:636(_check_type)
+      108    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 __init__.py:382(__getitem__)
+      118    0.000    0.000    0.000    0.000 sre_parse.py:145(__setitem__)
+       30    0.000    0.000    0.000    0.000 collections.py:361(<genexpr>)
+      193    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 logicAgents.py:72(__init__)
+        1    0.000    0.000    0.000    0.000 {binascii.hexlify}
+        1    0.000    0.000    0.000    0.000 searchUtil.py:15(<module>)
+        1    0.000    0.000    0.000    0.000 ghostAgents.py:15(<module>)
+       11    0.000    0.000    0.000    0.000 opcode.py:31(name_op)
+        2    0.000    0.000    0.000    0.000 game.py:211(deepCopy)
+      114    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 keyboardAgents.py:15(<module>)
+      291    0.000    0.000    0.000    0.000 {ord}
+       90    0.000    0.000    0.000    0.000 {max}
+        6    0.000    0.000    0.000    0.000 hashlib.py:100(__get_openssl_constructor)
+        1    0.000    0.000    0.000    0.000 bisect.py:1(<module>)
+       31    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 logicPlan.py:18(<module>)
+        1    0.000    0.000    0.000    0.000 optparse.py:366(__init__)
+        6    0.000    0.000    0.000    0.000 {repr}
+        1    0.000    0.000    0.000    0.000 patrollingGhostAgents.py:15(<module>)
+        1    0.000    0.000    0.000    0.000 gettext.py:132(_expand_lang)
+       41    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+       17    0.000    0.000    0.000    0.000 optparse.py:981(_check_conflict)
+        5    0.000    0.000    0.000    0.000 optparse.py:779(process)
+       17    0.000    0.000    0.000    0.000 optparse.py:580(_check_opt_strings)
+       18    0.000    0.000    0.000    0.000 sre_compile.py:546(isstring)
+      214    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+       28    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+       19    0.000    0.000    0.000    0.000 tokenize.py:45(group)
+       25    0.000    0.000    0.000    0.000 game.py:125(__init__)
+        1    0.000    0.000    0.000    0.000 optparse.py:200(__init__)
+        1    0.000    0.000    0.000    0.000 layout.py:15(<module>)
+        1    0.000    0.000    0.000    0.000 mbcs.py:38(getregentry)
+        1    0.000    0.000    0.000    0.000 <string>:1(Attribute)
+       17    0.000    0.000    0.000    0.000 optparse.py:833(isbasestring)
+        1    0.000    0.000    0.000    0.000 textDisplay.py:15(<module>)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2919(Text)
+        5    0.000    0.000    0.000    0.000 game.py:155(getPosition)
+        1    0.000    0.000    0.000    0.000 game.py:120(AgentState)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1585(Wm)
+        1    0.000    0.000    0.000    0.000 game.py:518(__init__)
+       18    0.000    0.000    0.000    0.000 {_struct.calcsize}
+        2    0.000    0.000    0.000    0.000 ntpath.py:340(getenv)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:266(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'findall' of '_sre.SRE_Pattern' objects}
+        1    0.000    0.000    0.000    0.000 game.py:49(Directions)
+        1    0.000    0.000    0.000    0.000 collections.py:26(OrderedDict)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2684(Menu)
+        1    0.000    0.000    0.000    0.000 optparse.py:838(__init__)
+        9    0.000    0.000    0.000    0.000 sre_parse.py:67(__init__)
+       12    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+       17    0.000    0.000    0.000    0.000 optparse.py:700(_check_nargs)
+        1    0.000    0.000    0.000    0.000 <string>:1(Traceback)
+       17    0.000    0.000    0.000    0.000 optparse.py:679(_check_dest)
+        1    0.000    0.000    0.000    0.000 pacman.py:469(parseAgentArgs)
+        1    0.000    0.000    0.000    0.000 codecs.py:83(__new__)
+        1    0.000    0.000    0.000    0.000 keyword.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgSpec)
+        1    0.000    0.000    0.000    0.000 <string>:1(Arguments)
+        3    0.000    0.000    0.000    0.000 os.py:424(__getitem__)
+        1    0.000    0.000    0.000    0.000 optparse.py:933(__init__)
+       17    0.000    0.000    0.000    0.000 optparse.py:630(_check_action)
+        1    0.000    0.000    0.000    0.000 <string>:1(ModuleInfo)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgInfo)
+        3    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {math.exp}
+        1    0.000    0.000    0.000    0.000 __init__.py:49(normalize_encoding)
+        1    0.000    0.000    0.000    0.000 optparse.py:1277(set_usage)
+        1    0.000    0.000    0.000    0.000 random.py:72(Random)
+       17    0.000    0.000    0.000    0.000 optparse.py:709(_check_callback)
+       28    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       17    0.000    0.000    0.000    0.000 optparse.py:666(_check_choice)
+        5    0.000    0.000    0.000    0.000 optparse.py:772(convert_value)
+       17    0.000    0.000    0.000    0.000 optparse.py:694(_check_const)
+        6    0.000    0.000    0.000    0.000 opcode.py:39(jabs_op)
+       34    0.000    0.000    0.000    0.000 {_ctypes.sizeof}
+        1    0.000    0.000    0.000    0.000 game.py:287(Actions)
+        1    0.000    0.000    0.000    0.000 Tkconstants.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 collections.py:395(Counter)
+        6    0.000    0.000    0.000    0.000 opcode.py:35(jrel_op)
+        1    0.000    0.000    0.000    0.000 {_ctypes.LoadLibrary}
+        4    0.000    0.000    0.000    0.000 os.py:446(get)
+        3    0.000    0.000    0.000    0.000 os.py:444(__contains__)
+        7    0.000    0.000    0.000    0.000 optparse.py:765(check_value)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2593(Listbox)
+        1    0.000    0.000    0.000    0.000 agents.py:212(Environment)
+        1    0.000    0.000    0.000    0.000 {method 'union' of 'set' objects}
+       13    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 patrollingGhostAgents.py:22(__init__)
+       14    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+       17    0.000    0.000    0.000    0.000 {filter}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2488(Entry)
+        1    0.000    0.000    0.000    0.000 locale.py:363(normalize)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3295(Image)
+        1    0.000    0.000    0.000    0.000 logic.py:32(Expr)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2001(Grid)
+        1    0.000    0.000    0.000    0.000 {time.time}
+        1    0.000    0.000    0.000    0.000 mbcs.py:20(decode)
+        1    0.000    0.000    0.000    0.000 pacman.py:145(getPacmanPosition)
+        1    0.000    0.000    0.000    0.000 game.py:162(Grid)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:221(Variable)
+       30    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {sys._getframe}
+        7    0.000    0.000    0.000    0.000 __future__.py:75(__init__)
+        1    0.000    0.000    0.000    0.000 {_codecs.mbcs_decode}
+        9    0.000    0.000    0.000    0.000 pacman.py:466(default)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3614(PanedWindow)
+       30    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 tokenize.py:46(any)
+        1    0.000    0.000    0.000    0.000 pacman.py:381(GhostRules)
+        1    0.000    0.000    0.000    0.000 {method 'encode' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3434(Spinbox)
+        1    0.000    0.000    0.000    0.000 util.py:215(Counter)
+        9    0.000    0.000    0.000    0.000 {getattr}
+        5    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 game.py:70(Configuration)
+        1    0.000    0.000    0.000    0.000 game.py:513(Game)
+        1    0.000    0.000    0.000    0.000 optparse.py:1243(_create_option_list)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1918(Pack)
+        1    0.000    0.000    0.000    0.000 agents.py:582(EnvToolbar)
+        2    0.000    0.000    0.000    0.000 tokenize.py:47(maybe)
+        5    0.000    0.000    0.000    0.000 optparse.py:791(take_action)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3359(PhotoImage)
+        1    0.000    0.000    0.000    0.000 __init__.py:332(CDLL)
+        1    0.000    0.000    0.000    0.000 searchUtil.py:77(SafeSearchProblem)
+        1    0.000    0.000    0.000    0.000 logic.py:136(PropSymbolExpr)
+        3    0.000    0.000    0.000    0.000 __init__.py:494(CFunctionType)
+        1    0.000    0.000    0.000    0.000 game.py:371(GameStateData)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1790(Tk)
+        1    0.000    0.000    0.000    0.000 agents.py:304(XYEnvironment)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1957(Place)
+        1    0.000    0.000    0.000    0.000 textDisplay.py:48(PacmanGraphics)
+        1    0.000    0.000    0.000    0.000 pacman.py:266(ClassicGameRules)
+        5    0.000    0.000    0.000    0.000 {cStringIO.StringIO}
+        1    0.000    0.000    0.000    0.000 keyboardAgents.py:19(KeyboardAgent)
+        1    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2111(Toplevel)
+        5    0.000    0.000    0.000    0.000 game.py:93(__eq__)
+        1    0.000    0.000    0.000    0.000 pacman.py:323(PacmanRules)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2139(Button)
+        1    0.000    0.000    0.000    0.000 {math.sqrt}
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 layout.py:22(Layout)
+        2    0.000    0.000    0.000    0.000 __init__.py:359(_FuncPtr)
+        1    0.000    0.000    0.000    0.000 random.py:655(WichmannHill)
+        6    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2846(Scale)
+        5    0.000    0.000    0.000    0.000 game.py:79(__init__)
+        1    0.000    0.000    0.000    0.000 tokenize.py:179(Untokenizer)
+        1    0.000    0.000    0.000    0.000 random.py:805(SystemRandom)
+        1    0.000    0.000    0.000    0.000 util.py:120(Stack)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2048(BaseWidget)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:745(PriorityQueue)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:786(fixup)
+        1    0.000    0.000    0.000    0.000 {_ctypes.set_conversion_mode}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2819(Radiobutton)
+        1    0.000    0.000    0.000    0.000 textDisplay.py:26(NullGraphics)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2459(Checkbutton)
+        4    0.000    0.000    0.000    0.000 ghostAgents.py:23(__init__)
+        5    0.000    0.000    0.000    0.000 game.py:83(getPosition)
+        1    0.000    0.000    0.000    0.000 __future__.py:74(_Feature)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:345(IntVar)
+        1    0.000    0.000    0.000    0.000 util.py:137(Queue)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:725(FIFOQueue)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2879(Scrollbar)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:254(FoodGhostsPlanningProblem)
+        1    0.000    0.000    0.000    0.000 util.py:157(PriorityQueue)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:203(FoodPlanningProblem)
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x1E229458}
+        1    0.000    0.000    0.000    0.000 game.py:32(Agent)
+        3    0.000    0.000    0.000    0.000 __init__.py:104(CFunctionType)
+        1    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 agents.py:60(Thing)
+        1    0.000    0.000    0.000    0.000 patrollingGhostAgents.py:20(PatrollingGhost)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:323(StringVar)
+        4    0.000    0.000    0.000    0.000 __init__.py:429(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:389(BooleanVar)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:121(PositionPlanningProblem)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3258(OptionMenu)
+        1    0.000    0.000    0.000    0.000 hybridAgents.py:19(BaseAgent)
+        1    0.000    0.000    0.000    0.000 util.py:188(PriorityQueueWithFunction)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha1}
+        3    0.000    0.000    0.000    0.000 optparse.py:756(get_opt_string)
+        1    0.000    0.000    0.000    0.000 optparse.py:960(set_conflict_handler)
+        1    0.000    0.000    0.000    0.000 {sys.setrecursionlimit}
+        1    0.000    0.000    0.000    0.000 agents.py:493(WumpusEnvironment)
+        1    0.000    0.000    0.000    0.000 __init__.py:243(c_char_p)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1543(XView)
+        1    0.000    0.000    0.000    0.000 ghostAgents.py:45(DirectionalGhost)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3805(Studbutton)
+        1    0.000    0.000    0.000    0.000 agents.py:412(VacuumEnvironment)
+        3    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 logicPlan.py:30(PlanningProblem)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2809(Menubutton)
+        1    0.000    0.000    0.000    0.000 agents.py:447(TrivialVacuumEnvironment)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3247(_setit)
+        1    0.000    0.000    0.000    0.000 ghostAgents.py:22(GhostAgent)
+        1    0.000    0.000    0.000    0.000 keyboardAgents.py:67(KeyboardAgent2)
+        2    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 pacmanAgents.py:21(LeftTurnAgent)
+        1    0.000    0.000    0.000    0.000 __init__.py:159(py_object)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 agents.py:565(EnvGUI)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:54(LogicAgent)
+        1    0.000    0.000    0.000    0.000 util.py:21(FixedRandom)
+        1    0.000    0.000    0.000    0.000 agents.py:80(Agent)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:250(DefaultDict)
+        1    0.000    0.000    0.000    0.000 __init__.py:388(PyDLL)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3592(LabelFrame)
+        1    0.000    0.000    0.000    0.000 optparse.py:944(_create_option_mappings)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha512}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1564(YView)
+        1    0.000    0.000    0.000    0.000 inspect.py:632(BlockFinder)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3419(BitmapImage)
+        1    0.000    0.000    0.000    0.000 mbcs.py:23(IncrementalEncoder)
+        1    0.000    0.000    0.000    0.000 agents.py:488(Pit)
+        1    0.000    0.000    0.000    0.000 agents.py:403(Wall)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:370(DoubleVar)
+        1    0.000    0.000    0.000    0.000 util.py:596(TimeoutFunction)
+        1    0.000    0.000    0.000    0.000 util.py:591(TimeoutFunctionException)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:149(Event)
+        1    0.000    0.000    0.000    0.000 __init__.py:406(HRESULT)
+        1    0.000    0.000    0.000    0.000 hybridAgents.py:47(HybridAgent)
+        1    0.000    0.000    0.000    0.000 mbcs.py:27(IncrementalDecoder)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3813(Tributton)
+        1    0.000    0.000    0.000    0.000 __init__.py:294(c_wchar)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 logic_utils.py:701(Queue)
+        1    0.000    0.000    0.000    0.000 __init__.py:226(c_ubyte)
+        1    0.000    0.000    0.000    0.000 __init__.py:428(LibraryLoader)
+        1    0.000    0.000    0.000    0.000 pacman.py:148(getGhostStates)
+        1    0.000    0.000    0.000    0.000 pacmanAgents.py:35(GreedyAgent)
+        1    0.000    0.000    0.000    0.000 agents.py:489(Arrow)
+        1    0.000    0.000    0.000    0.000 util.py:630(WritableNull)
+        1    0.000    0.000    0.000    0.000 optparse.py:1268(_init_parsing_state)
+        9    0.000    0.000    0.000    0.000 {globals}
+        1    0.000    0.000    0.000    0.000 __init__.py:260(c_bool)
+        1    0.000    0.000    0.000    0.000 inspect.py:630(EndOfBlock)
+        1    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:172(c_ushort)
+        1    0.000    0.000    0.000    0.000 __init__.py:233(c_byte)
+        1    0.000    0.000    0.000    0.000 agents.py:398(Obstacle)
+        1    0.000    0.000    0.000    0.000 mbcs.py:30(StreamWriter)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:277(getGhostStartStates)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:39(GoWestAgent)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1523(CallWrapper)
+        1    0.000    0.000    0.000    0.000 logic_utils.py:264(Struct)
+        1    0.000    0.000    0.000    0.000 pacman.py:191(getWalls)
+        1    0.000    0.000    0.000    0.000 __init__.py:419(OleDLL)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2553(Frame)
+        1    0.000    0.000    0.000    0.000 ghostAgents.py:37(RandomGhost)
+        1    0.000    0.000    0.000    0.000 pacman.py:271(__init__)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:298(getWidth)
+        1    0.000    0.000    0.000    0.000 tokenize.py:146(TokenError)
+        1    0.000    0.000    0.000    0.000 __init__.py:215(c_longlong)
+        1    0.000    0.000    0.000    0.000 optparse.py:965(set_description)
+        1    0.000    0.000    0.000    0.000 mbcs.py:33(StreamReader)
+        1    0.000    0.000    0.000    0.000 __init__.py:168(c_short)
+        1    0.000    0.000    0.000    0.000 patrollingGhostAgents.py:49(StationaryGhost)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2104(Widget)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2814(Message)
+        1    0.000    0.000    0.000    0.000 __init__.py:201(c_double)
+        5    0.000    0.000    0.000    0.000 optparse.py:753(takes_value)
+        1    0.000    0.000    0.000    0.000 _endian.py:26(_swapped_meta)
+        1    0.000    0.000    0.000    0.000 _endian.py:49(BigEndianStructure)
+        1    0.000    0.000    0.000    0.000 __init__.py:180(c_ulong)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 __init__.py:397(WinDLL)
+        1    0.000    0.000    0.000    0.000 logic.py:282(SpecialExpr)
+        1    0.000    0.000    0.000    0.000 optparse.py:1362(_get_args)
+        1    0.000    0.000    0.000    0.000 __init__.py:197(c_float)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2571(Label)
+        1    0.000    0.000    0.000    0.000 __init__.py:176(c_long)
+        1    0.000    0.000    0.000    0.000 layout.py:40(getNumGhosts)
+        1    0.000    0.000    0.000    0.000 textDisplay.py:27(initialize)
+        1    0.000    0.000    0.000    0.000 game.py:550(mute)
+        1    0.000    0.000    0.000    0.000 agents.py:487(Gold)
+        1    0.000    0.000    0.000    0.000 optparse.py:1313(_get_all_options)
+        1    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 logicAgents.py:274(getStartState)
+        1    0.000    0.000    0.000    0.000 __init__.py:291(c_wchar_p)
+        1    0.000    0.000    0.000    0.000 __init__.py:219(c_ulonglong)
+        1    0.000    0.000    0.000    0.000 tokenize.py:148(StopTokenizing)
+        1    0.000    0.000    0.000    0.000 pacman.py:179(getFood)
+        1    0.000    0.000    0.000    0.000 agents.py:491(Explorer)
+        1    0.000    0.000    0.000    0.000 agents.py:409(Dirt)
+        1    0.000    0.000    0.000    0.000 optparse.py:1407(check_values)
+        1    0.000    0.000    0.000    0.000 logicAgents.py:305(getHeight)
+        1    0.000    0.000    0.000    0.000 __init__.py:255(c_void_p)
+        1    0.000    0.000    0.000    0.000 optparse.py:225(set_parser)
+        1    0.000    0.000    0.000    0.000 __init__.py:238(c_char)
+        1    0.000    0.000    0.000    0.000 __init__.py:205(c_longdouble)
+        1    0.000    0.000    0.000    0.000 agents.py:490(Wumpus)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
